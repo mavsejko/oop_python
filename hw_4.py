@@ -55,7 +55,7 @@ class SecureData:
     def __setattr__(self, key, value):
         if key == "token":
             raise AttributeError("Запрещено создание атрибута с именем token")
-        return object.__setattr__(key, value)
+        return self.object.__setattr__(key, value)
 
     def get_secret(self):
         return self.__secret
@@ -120,7 +120,7 @@ class Employee:
 
     @salary.setter
     def salary(self, value: int):
-        if value < 0:
+        if value <= 0:
             raise ValueError("Зарплата должна быть положительным числом")
         self.__salary = value
 
