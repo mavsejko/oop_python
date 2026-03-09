@@ -74,12 +74,11 @@ class HasText:
 
     def __call__(self, text):
         result = self.value in text
-        print(result)
-        return str(result)
+        return result
 
 
 assert HasText("Success")("Test passed: Success")  # True
-assert HasText("Error")("All OK")  # False
+assert HasText("Error")("All OK") is False  # False
 
 """
 4. Создай класс Book, который хранит:
