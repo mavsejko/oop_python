@@ -151,7 +151,7 @@ class Employee:
 
     @salary.setter
     def salary(self, value: int):
-        if value < 0:
+        if value <= 0:
             raise ValueError("Зарплата должна быть положительным числом")
         self.__salary = value
 
