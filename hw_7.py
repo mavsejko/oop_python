@@ -222,7 +222,7 @@ class MixinLog:
         self.id = MixinLog.ID
 
     def save_sell_log(self):
-        print(f"{self.id} продан в {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"{self.id} продан в {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
     def print_info(self):
         print(f"INFO MixinLog {self.id}")
