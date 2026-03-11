@@ -235,8 +235,8 @@ class NoteBook(Goods, MixinLog):
 class NoteBook1(MixinLog, Goods):
     pass
 
-#n = NoteBook('test_notebook', 50_000, 1500)
-#n.print_info() #test_notebook, 1500, 50000, если Goods, MixinLog
+n = NoteBook('test_notebook', 50_000, 1500)
+n.print_info() #test_notebook, 1500, 50000, если Goods, MixinLog
 
 #n1 = NoteBook1()
 #n1.print_info() #INFO MixinLog 1, если MixinLog, Goods
