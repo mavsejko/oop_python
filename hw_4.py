@@ -232,7 +232,7 @@ class Card:
     @number.deleter
     def number(self):
         print(f"LOG Карта {self.__number} удалена в {datetime.now()}")
-        return object.__delattr__(self, "_Card__number")
+        return self.object.__delattr__(self, "_Card__number")
 
 
 test_num = "1111111111111234"
