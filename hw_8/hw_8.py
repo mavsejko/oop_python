@@ -139,9 +139,9 @@ def divide(x, y):
 """
 
 
-#class NegativeNumberError(Exception):
-#    def __str__(self):
-#        return "Х не должен быть меньше нуля"
+class NegativeNumberError(Exception):
+    def __str__(self):
+        return "Х не должен быть меньше нуля"
 
 
 def sqrt(x):
